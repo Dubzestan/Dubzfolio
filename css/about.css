@@ -1,0 +1,89 @@
+/* ===== ABOUT ===== */
+.about {
+  padding: 8rem 3rem;
+  background-color: #0b0f19;
+}
+
+.about__container {
+  max-width: 1280px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 6rem;
+  align-items: flex-start;
+}
+
+/* Shared section labels */
+.section__label {
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: lowercase;
+  color: #00d4ff;
+  margin-bottom: 1rem;
+}
+
+.section__title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  line-height: 1.05;
+}
+
+.about__bio {
+  color: #b8c1d1;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+/* Skills tags */
+.about__skills {
+  list-style: square;
+  padding: 0.5rem;
+  margin: 2rem 0 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.about__skill-tag {
+  background-color: #162033;
+  color: #d6e4ff;
+  border: 2px dashed #4a5d80;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  transition: all 0.35s ease-in-out;
+}
+
+.about__skill-tag:hover {
+  border-color: #00d4ff;
+  color: #ffffff;
+  background-color: #1d2b45;
+  transform: translateY(-3px);
+}
+
+/* Avatar placeholder */
+.about__image-wrap {
+  display: grid;
+  justify-content: end;
+  align-items: start;
+}
+
+.about__avatar {
+  width: 280px;
+  height: 280px;
+  border-radius: 24px;
+  background: linear-gradient(160deg, #00d4ff, #1f2937, #7c3aed);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #f9fafb;
+  letter-spacing: 6px;
+  box-shadow: 0 20px 80px rgba(0, 212, 255, 0.35);
+}
