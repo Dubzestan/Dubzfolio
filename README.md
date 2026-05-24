@@ -11,8 +11,8 @@ Deployed automatically to GitHub Pages via GitHub Actions.
 
 | Member | Tasks |
 |--------|-------|
-| Person 1 | Setup, Navbar, Projects, Global styles, CI, Responsive |
-| Person 2 | Hero, About, Contact, Animations, Form validation, README |
+| Parsa | Setup, Navbar, Projects, Global styles, CI, Responsive |
+| Arian | Hero, About, Contact, Animations, Form validation, README |
 
 ---
 
@@ -99,21 +99,6 @@ Dubzfolio/
 
 ---
 
-## Video Recording
-
-ضبط ویدئو برای این آزمایش الزامی است و بخشی از نمره را تشکیل می‌دهد.
-
-ویدئو باید موارد زیر را پوشش دهد:
-
-- نمایش ساختار مخزن و شاخه‌ها در GitHub / Hamgit
-- نمایش تابلوی Kanban و وضعیت issue‌ها
-- نمایش تاریخچه commit‌ها (`git log --oneline --graph`)
-- نمایش حل تعارض‌های merge (Conflict #1 و Conflict #2)
-- نمایش اجرای موفق GitHub Actions workflow
-- نمایش سایت زنده روی GitHub Pages
-- توضیح شفاهی مراحل کار توسط هر دو نفر تیم
-
----
 
 ## Questions
 
