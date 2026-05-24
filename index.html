@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <!-- CSS files will be linked here -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
   <!-- Navbar -->
@@ -27,6 +34,24 @@
     </div>
   </header>
   <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__container">
+      <p class="hero__greeting">Hi, I'm</p>
+      <h1 class="hero__name">Alex Johnson</h1>
+      <h2 class="hero__title">Full-Stack Developer</h2>
+      <p class="hero__description">
+        I build clean, accessible, and performant web experiences.
+        Passionate about open source and good design.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact"  class="btn btn--outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
   <section class="hero" id="hero">
     <div class="hero__container">
       <p class="hero__greeting">Hi, I'm</p>
@@ -75,8 +100,139 @@
     </div>
   </section>
   <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="projects__container">
+      <span class="section__label">My Work</span>
+      <h2 class="section__title">Projects</h2>
+      <div class="projects__grid">
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon" aria-hidden="true">📁</span>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="View source code">&lt;/&gt;</a>
+              <a href="#" class="project-card__link" aria-label="View live demo">↗</a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Task Manager App</h3>
+          <p class="project-card__desc">
+            A full-stack task management application with real-time updates,
+            drag-and-drop, and team collaboration features.
+          </p>
+          <ul class="project-card__tags">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>WebSockets</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon" aria-hidden="true">📁</span>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="View source code">&lt;/&gt;</a>
+              <a href="#" class="project-card__link" aria-label="View live demo">↗</a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Weather Dashboard</h3>
+          <p class="project-card__desc">
+            A responsive weather dashboard that fetches real-time data
+            from OpenWeatherMap API with 7-day forecasts and charts.
+          </p>
+          <ul class="project-card__tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>REST API</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon" aria-hidden="true">📁</span>
+            <div class="project-card__links">
+              <a href="#" class="project-card__link" aria-label="View source code">&lt;/&gt;</a>
+              <a href="#" class="project-card__link" aria-label="View live demo">↗</a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Dev Blog</h3>
+          <p class="project-card__desc">
+            A static blog built with pure HTML/CSS/JS featuring markdown
+            rendering, syntax highlighting, and dark mode.
+          </p>
+          <ul class="project-card__tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
   <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact__container">
+      <span class="section__label">Get In Touch</span>
+      <h2 class="section__title">Contact Me</h2>
+      <p class="contact__subtitle">
+        Have a project in mind or just want to say hi?
+        My inbox is always open.
+      </p>
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="form__group">
+          <label for="name" class="form__label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form__input"
+            placeholder="Your name"
+            required
+            autocomplete="name"
+          />
+          <span class="form__error" id="nameError" role="alert"></span>
+        </div>
+        <div class="form__group">
+          <label for="email" class="form__label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form__input"
+            placeholder="your@email.com"
+            required
+            autocomplete="email"
+          />
+          <span class="form__error" id="emailError" role="alert"></span>
+        </div>
+        <div class="form__group">
+          <label for="message" class="form__label">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form__input form__textarea"
+            placeholder="Your message..."
+            rows="5"
+            required
+          ></textarea>
+          <span class="form__error" id="messageError" role="alert"></span>
+        </div>
+        <button type="submit" class="btn btn--primary form__submit">
+          Send Message
+        </button>
+        <p class="form__success" id="formSuccess" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
   <!-- Footer -->
-  <!-- JS files will be linked here -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copy">&copy; 2026 Alex Johnson. All rights reserved.</p>
+      <ul class="footer__links">
+        <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a></li>
+        <li><a href="mailto:alex@example.com" class="footer__link">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- JS -->
+  <script src="js/navbar.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>
